@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="./todo.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">DUSKY <span>TASK</span></div>
+      <div class="right">
+        <a href="./index.html" class="btn-btn">Add Task</a>
+        <a href="./setalarm.html" class="btn-btn">Set Alarm</a>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Header -->
+
+    <h2 class="head-text task-text">Task Manager</h2>
+    <p class="head-text">Enter the description of the tasks you would like to add and the desired time and date</p>
+    <p class="head-text">Click on the set alarm button to set task as alarm</p>
+    <hr>
+    <br><br>
+    <h2 class="task-text">Add Task</h2>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Task description">
+      <input type="date" id="dateInput">
+      <input type="time" id="timeInput">
+
+      <!-- To add alarm -->
+      <button class="btn-add-task" onclick="addTask()">+ </button>
+
+    </div>
+    <br>
+    <h2 class="task-text">Added Task</h2>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>TASK</th>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <br>
+    <p2>Want to set alarm instead? <a class="set-alarm-link" href="./setalarm.html">Clck Here</a></h2>
+      <!-- Reminder Display Section -->
+      <!-- <div id="reminderSection"></div> -->
+      <!-- Stop Music Button -->
+      <!-- <button id="stopMusicButton" onclick="stopMusic()">Stop Music</button> -->
+  </div>
+  <script src="./toDo.js"></script>
+</body>
+
+</html>
